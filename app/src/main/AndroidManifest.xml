@@ -11,7 +11,8 @@
         <activity
             android:screenOrientation="portrait"
             android:name=".ui.MainActivity"
-            android:label="@string/food_scanner">
+            android:label="@string/food_scanner"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
