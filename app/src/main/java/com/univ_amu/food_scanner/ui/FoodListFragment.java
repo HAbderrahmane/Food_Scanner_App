@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.univ_amu.food_scanner.data.Repository;
 import com.univ_amu.food_scanner.databinding.FragmentFoodListBinding;
@@ -13,6 +15,8 @@ import com.univ_amu.food_scanner.databinding.FragmentFoodListBinding;
 public class FoodListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         FragmentFoodListBinding binding = FragmentFoodListBinding.inflate(inflater, container, false);
+        binding.foodList.addItemDecoration(
+                new DividerItemDecoration(getContext(), LinearLayoutManager.VERTICAL));
         /* TODO :
             - créer une instance de Repository
 
