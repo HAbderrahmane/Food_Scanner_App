@@ -12,8 +12,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="88dp"
-        android:padding="16dp">
-
+        android:padding="16dp"
+        android:onClick="@{viewHolder::onClick}">
         <com.univ_amu.food_scanner.ui.NutriscoreView
             android:id="@+id/nutriscore"
             android:layout_width="48dp"
