@@ -1,0 +1,41 @@
+buildscript {
+
+    ext {
+
+        agp_version = '8.2.2'
+
+    }
+
+    repositories {
+
+        google()
+
+        mavenCentral()
+
+    }
+
+    dependencies {
+
+        classpath "com.android.tools.build:gradle:$agp_version"
+
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.7.6"
+
+    }
+
+}
+
+
+
+allprojects {
+
+    repositories {
+
+        google()
+
+        mavenCentral()
+
+
+
+    }
+
+}
